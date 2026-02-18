@@ -14,7 +14,7 @@ const useGetMessages = () => {
   const fetchMessages = async () => {
     try {
       const res = await axios.get(
-        `https://chat-backend-h890.onrender.com/api/v1/message/${selectedUser._id}`,
+        `http://localhost:5000/api/v1/message/${selectedUser._id}`,
         { withCredentials: true }
       );
       dispatch(setMessages(res.data || []));

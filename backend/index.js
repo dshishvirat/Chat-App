@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "chat-frontend-beta-six.vercel.app",
+    origin: "http://localhost:5173",
     credentials: true,
   }),
 );

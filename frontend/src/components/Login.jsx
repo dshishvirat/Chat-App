@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://chat-backend-h890.onrender.com/api/v1/user/login",
+        "http://localhost:5000/api/v1/user/login",
         user,
         {
           headers: { "Content-Type": "application/json" },
