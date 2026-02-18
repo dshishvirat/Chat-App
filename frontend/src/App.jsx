@@ -81,7 +81,7 @@ function App() {
     const fetchMe = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/user/me",
+          "https://chat-backend-h890.onrender.com/api/v1/user/me",
           { withCredentials: true }
         );
 

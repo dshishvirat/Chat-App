@@ -4,7 +4,7 @@ let socket = null;
 
 export const connectSocket = (userId) => {
   if (!socket) {
-    socket = io("http://localhost:5000", {
+    socket = io("https://chat-backend-h890.onrender.com", {
       query: { userId: String(userId) },
       withCredentials: true,
     });

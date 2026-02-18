@@ -23,7 +23,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/user/register",
+        "https://chat-backend-h890.onrender.com/api/v1/user/register",
         user,
         {
           headers: { "Content-Type": "application/json" },

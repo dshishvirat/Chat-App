@@ -12,7 +12,7 @@ const useGetOtherUsers = () => {
 
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/v1/user", {
+        const res = await axios.get("https://chat-backend-h890.onrender.com/api/v1/user", {
           withCredentials: true,
         });
 
