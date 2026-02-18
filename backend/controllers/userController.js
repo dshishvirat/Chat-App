@@ -66,6 +66,7 @@ export const login = async (req, res) => {
         httpOnly: true,
         sameSite: "none",
         secure: true,
+        domain: "chat-backend-h890.onrender.com",
         maxAge: 24 * 60 * 60 * 1000,
       })
       .json({
@@ -82,7 +83,7 @@ export const login = async (req, res) => {
 export const logout = (req, res) => {
   return res
     .status(200)
-    .cookie("token", "", { maxAge: 0, sameSite: "none", secure: true })
+    .cookie("token", "", { maxAge: 0, sameSite: "none", secure: true, domain: "chat-backend-h890.onrender.com" })
     .json({ message: "Logged out successfully" });
 };
 
