@@ -2,6 +2,7 @@
   "buildCommand": "cd frontend/frontend && npm run build",
   "outputDirectory": "frontend/frontend/dist",
   "installCommand": "cd frontend/frontend && npm install",
+  "nodeVersion": "18.x",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
